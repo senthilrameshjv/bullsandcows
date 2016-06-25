@@ -18,6 +18,7 @@ def generate_number(n):
 def get_user_input():
 	prev_bulls = bulls
 	prev_cows  = cows
+	print("Just like that")
 	bulls = input("How many bulls")
 	cows  = input("How many cows ")
 
