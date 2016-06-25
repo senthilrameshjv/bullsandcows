@@ -1,0 +1,15 @@
+define numeric array i[4]
+during first run:
+	generate_number(0)
+	generate_number(1)
+	generate_number(2)
+	generate_number(3)
+	
+show
+function generate_number:
+	generated_number = random(0,9)
+	if generated_number != i[(idx+1)%4] and  generated_number != i[(idx+2)%4] and generated_number != i[(idx+3)%4] 
+		return generated_number
+	else
+		function(generated_number, idx)
+	end-if
